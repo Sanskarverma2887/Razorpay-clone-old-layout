@@ -1,0 +1,118 @@
+@import "tailwindcss";
+@theme {
+    --font-mullish: "Mulish", "sans-serif";
+  
+    --color-deep-blue: #02042a;
+    --color-light-blue: #2b84ea;
+    --color-light-blue-300: #4b94ed;
+    --color-light-blue-500: #0b72e7;
+    --color-green-light: #61cea6;
+    --color-gray-text: #818597;
+    --color-light-gray: #e2e2e2;
+    --color-gray-blue: #344a6c;
+    --color-deep-blue-head: #162f56;
+    --color-gray-2: #525a76;
+  }
+  .navList{
+    @apply
+    text-white font-mullish py-7
+     hover:text-light-blue cursor-pointer 
+     transition-all duration-200 ease-in relative  ;
+
+  }
+  .divLine{
+    @apply
+    absolute bottom-0 w-full h-1 bg-light-blue hidden 
+    group-hover:block transition-all
+    duration-200;
+   
+  }
+  .logIn{
+    @apply
+    bg-deep-blue py-3 px-5 font-mullish text-white
+    border-light-blue border rounded-sm font-bold
+    cursor-pointer hover:text-light-gray
+    
+    ;
+  }
+  .signUp{
+    @apply
+    flex items-center
+    bg-white text-light-blue-300 font-mullish border
+     rounded-sm font-bold py-3 px-4
+     transition-all duration-200
+     hover:text-light-blue-500 hover:font-extrabold cursor-pointer;
+  }
+  .hero{
+    @apply
+    bg-deep-blue 
+    relative;
+  }
+  .textSection{
+    @apply
+    text-white
+    space-y-8;
+  }
+  .signUpBtn{
+    @apply
+    bg-light-blue rounded-sm font-bold
+     hover:bg-light-blue-500 transition-all duration-200 
+     cursor-pointer
+     py-[17px] px-[18px];
+     
+  }
+  .contentBox{
+    @apply
+    w-full min-h-[520px] bg-white border rounded-md
+     border-light-gray
+      relative py-12 p-10
+      flex flex-wrap
+       ;
+  }
+  .listItem{
+    @apply
+    font-mullish flex items-center space-x-2;
+  }
+  .boxImage{
+    @apply
+    bg-light-blue absolute right-3 top-3 w-12 h-12 rounded-full z-[8]
+    transition-all duration-200; 
+  }
+  .boxImageDark{
+    @apply
+    bg-[#181C2E] absolute right-3 top-3 w-12 h-12  border-white border-2 rounded-full z-[8]
+    transition-all duration-200; 
+  }
+  .divContent{
+    @apply
+    z-[100] absolute w-full h-full flex flex-col justify-evenly
+    pl-5 py-6 pr-8
+    ;
+  }
+
+  .coreFeature {
+    background-size: 100% 100%;
+    padding-top: 14rem;
+    padding-bottom: 12rem;
+  }
+  .ctaSection{
+    background-size: 100% 100%;
+    
+
+  }
+  .moveImage{
+    animation-name: moveCompany;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate ;
+  }
+  @keyframes moveCompany {
+    0%{
+      top: 0;
+    }
+    100%{
+      top:-100%;
+    }
+
+  }
